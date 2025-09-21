@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "66ea4d1f0509a7ea746b9ae96e3e2abb"
+name = "app-try-3"
+application_url = "https://app-try-3-main-2.fly.dev"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://app-try-3-main-2.fly.dev/auth/callback",
+  "https://app-try-3-main-2.fly.dev/auth/shopify/callback",
+  "https://app-try-3-main-2.fly.dev/api/auth/callback"
+]
